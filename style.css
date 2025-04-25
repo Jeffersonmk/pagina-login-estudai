@@ -22,8 +22,8 @@
 }
 
 .submit {
-    width: 739px;
-    height: 87px;
+    width: 700px;
+    height: 60px;
     color: black;
     background-color: white;
     border-radius: 40px;
@@ -31,10 +31,13 @@
     font-size: 26px;
     font-weight: bold;
     border: 1px solid #8C8A8A;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .login-senha p {
     display: inline-block;
+    margin: 10px;
 }
 
 .conteudo-login {
@@ -42,37 +45,59 @@
     max-width: 700px; /* Tamanho máximo para o conteúdo */
 }
 
+.form-login {
+    margin: 5px;
+    text-align: center;
+}
 
-#login-permanecer {
-    font-family: "Inter", sans-serif;
-    color: #2A59D1;
-    font-weight: bold;
-    font-size: 26px;
+.circulo {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: #8E8E8E;
+    display: inline-block;
+}
+
+.login-senha {
+    margin-bottom: 10px;
+}
+
+.login-senha label input {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+}
+
+.botoes {
+    text-align: center;
 }
 
 #esquecer-senha {
     font-family: "Inter", sans-serif;
     color: #2A59D1;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 #entrar {
     font-family:"Poppins", sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     border-radius: 40px;
     background-color: #FF4F4F;
     border: none;
-    width: 851px;
-    height: 87px;
+    width: 720px;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 #login-opcoes {
     font-family:"Poppins", sans-serif;
     font-weight: medium;
     color: #787878;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #inscrever {
@@ -119,9 +144,11 @@ input[type="email"] {
     background-color: #E4E4E4;
     border: none;
     border-radius: 20px;
-    width: 700px;
+    width: 640px;
     height: 60px;
-    margin: 10px
+    margin: 10px;
+    padding-left: 20px;
 }
+
 
 
