@@ -17,13 +17,10 @@
     justify-content: center; /* Alinhamento horizontal */
     align-items: center; /* Alinhamento vertical */
     height: 100vh; /* Ocupa toda a altura da tela */
-    background-color: aqua;
     flex: 1;  /* Ocupa todo o espaço disponível ao lado da imagem */
 }
 
 .submit {
-    width: 700px;
-    height: 60px;
     color: black;
     background-color: white;
     border-radius: 40px;
@@ -33,10 +30,12 @@
     border: 1px solid #8C8A8A;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.login-senha p {
-    display: inline-block;
+.login-senha {
+    justify-content: space-between;
+    display: flex;
     margin: 10px;
 }
 
@@ -60,7 +59,9 @@
 }
 
 .login-senha {
-    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 15px;
 }
 
 .login-senha label input {
@@ -88,9 +89,8 @@
     border-radius: 40px;
     background-color: #FF4F4F;
     border: none;
-    width: 720px;
-    height: 60px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #login-opcoes {
@@ -100,18 +100,66 @@
     font-size: 18px;
 }
 
-#inscrever {
+.login-senha > .checkbox-modificado > label {
     font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 26px;
+    font-weight: bold;
+    color: #2A59D1;
+    font-size: 20px;
+}
+
+.checkbox-modificado input[type="checkbox"] {
+    display: none; /* Esconde o checkbox padrão */
+}
+
+/* Estiliza o label */
+
+.checkbox-modificado label {
+    position: relative;
+    padding-left: 30px; /* Espaço para o círculo */
+    cursor: pointer;
+    color: #2962ff; /* Azul forte */
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+/* Desenha o círculo */
+.checkbox-modificado label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid #999; /* Cinza */
+    border-radius: 50%; /* Torna o quadrado um círculo */
+    background-color: white;
+}
+
+/* Quando estiver marcado */
+.checkbox-modificado input[type="checkbox"]:checked + label::before {
+    background-color: #2962ff; /* Fundo azul quando marcado */
+    border-color: #999;
+}
+
+#inscrever,
+span {
+    font-family: "Inter", sans-serif;
+    font-weight: 600; 
+}
+
+#inscrever {
+    font-size: 20px;
     color: #FF4F4F;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 span {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 26px;
+    font-size: 20px;
     color: black;
+    cursor: pointer;
 }
 
 img {
@@ -119,7 +167,6 @@ img {
     width: 50vw;   /* Ocupa 50% da largura visível da tela */
     display: block;
 }
-
 
 h1 {
     font-family:"Poppins", sans-serif;
@@ -144,11 +191,19 @@ input[type="email"] {
     background-color: #E4E4E4;
     border: none;
     border-radius: 20px;
-    width: 640px;
-    height: 60px;
     margin: 10px;
     padding-left: 20px;
 }
 
+input[type="text"],
+input[type="email"],
+#entrar {
+    width: 100%; /* Sempre ocupa 100% do conteudo-login */
+    max-width: 640px; /* Se quiser um limite um pouquinho menor */
+    height: 60px;
+}
 
-
+.submit {
+    height: 60px;
+    width: 600px;
+}
