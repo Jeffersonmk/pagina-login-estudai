@@ -18,10 +18,6 @@
 - [Google Fonts](https://fonts.google.com/)  
 - [Font Awesome](https://fontawesome.com/)
 
-## 📷 Imagem do Projeto
-
-![Preview do Formulário](./image/login-image.png)
-
 ## 🚀 Funcionalidades
 
 - Formulário de login com campos de nome e e-mail.  
