@@ -20,7 +20,7 @@
 
 ## 📷 Imagem do Projeto
 
-![Preview do Formulário](./image/image-login.png)
+![Preview do Formulário](./image/login-image.png)
 
 ## 🚀 Funcionalidades
 
